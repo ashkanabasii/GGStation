@@ -3,7 +3,6 @@ Ground Station 3D visualization
 # -*- coding: utf-8 -*-
 """
 Created on Fri May 27 22:12:00 2025
-
 @author: ashka
 """
 from vpython import *

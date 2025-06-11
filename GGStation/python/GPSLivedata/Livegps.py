@@ -60,7 +60,7 @@ def main():
         print("Raw GPS:", decoded_line)
 
         lat, lon = extract_lat_lon(decoded_line)
-        if lat and lon:
+        if lat is not None and lon is not None:
             print(f"Current Position: Latitude={lat:.6f}, Longitude={lon:.6f}")
             path_points.append((lat, lon))
 

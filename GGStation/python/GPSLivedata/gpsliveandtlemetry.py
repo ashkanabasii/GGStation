@@ -173,7 +173,7 @@ def read_gps_serial():
             line = ser.readline().decode('ascii', errors='replace').strip()
             print("GPS:", line)
             lat, lon = extract_lat_lon(line)
-            if lat and lon:
+            if lat is not None and lon is not None:
                 update_gps_data(lat, lon)
         except Exception as e:
             print("Serial read error:", e)
